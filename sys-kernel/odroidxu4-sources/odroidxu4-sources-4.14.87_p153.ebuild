@@ -23,7 +23,7 @@ HOMEPAGE="https://github.com/hardkernel/linux"
 
 if [[ ${PV} != *"9999" ]] ; then
 	EGIT_COMMIT="${PV//_p/-}"
-	KEYWORDS="~arm"
+	KEYWORDS="arm"
 fi
 
 src_unpack() {
