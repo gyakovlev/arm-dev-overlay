@@ -22,7 +22,7 @@ HOMEPAGE="https://github.com/ayufan-rock64/linux-kernel"
 
 if [[ ${PV} != *"9999" ]] ; then
 	EGIT_COMMIT="${PV//_p/-}-rockchip-ayufan"
-	KEYWORDS="~arm64"
+	KEYWORDS="arm64"
 fi
 
 src_unpack() {
