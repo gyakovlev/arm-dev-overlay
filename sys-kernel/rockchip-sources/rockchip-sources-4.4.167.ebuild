@@ -22,7 +22,7 @@ HOMEPAGE="https://github.com/rockchip-linux/kernel"
 
 if [[ ${PV} != *"9999" ]] ; then
 	EGIT_COMMIT="5f783fd0a840588ca62b9f658d306277c7127229"
-	KEYWORDS="~arm64"
+	KEYWORDS="arm64"
 fi
 
 src_unpack() {
