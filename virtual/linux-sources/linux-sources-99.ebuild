@@ -24,4 +24,5 @@ RDEPEND="
 		sys-kernel/aufs-sources
 		sys-kernel/raspberrypi-sources
 		sys-kernel/odroidxu4-sources
+		sys-kernel/rockchip-sources
 	)"
