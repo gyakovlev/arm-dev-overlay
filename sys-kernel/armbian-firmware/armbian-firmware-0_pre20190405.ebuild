@@ -12,7 +12,7 @@ if [ ${PV} == "9999" ] ; then
 else
 	EGIT_COMMIT="fe584970a1f8e718540a3cec4838e7a4cad5f263"
 	SRC_URI="https://github.com/armbian/firmware/archive/${EGIT_COMMIT}.tar.gz -> ${P}.tar.gz"
-	KEYWORDS="~arm ~arm64"
+	KEYWORDS="arm arm64"
 	S="${WORKDIR}/firmware-${EGIT_COMMIT}"
 fi
 
