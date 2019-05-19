@@ -5,24 +5,12 @@ EAPI=6
 
 DESCRIPTION="Virtual for Linux kernel sources"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 arm arm64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
+KEYWORDS="arm arm64"
 IUSE="firmware"
 
 RDEPEND="
-	firmware? ( sys-kernel/linux-firmware )
+	firmware? ( sys-kernel/armbian-firmware )
 	|| (
-		sys-kernel/gentoo-sources
-		sys-kernel/vanilla-sources
-		sys-kernel/ck-sources
-		sys-kernel/git-sources
-		sys-kernel/hardened-sources
-		sys-kernel/mips-sources
-		sys-kernel/pf-sources
-		sys-kernel/rt-sources
-		sys-kernel/xbox-sources
-		sys-kernel/zen-sources
-		sys-kernel/aufs-sources
-		sys-kernel/raspberrypi-sources
 		sys-kernel/odroidxu4-sources
 		sys-kernel/rockchip64-sources
 	)"
