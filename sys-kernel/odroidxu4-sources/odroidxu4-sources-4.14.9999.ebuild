@@ -16,13 +16,14 @@ inherit git-r3
 
 EGIT_REPO_URI="https://github.com/hardkernel/linux.git"
 EGIT_BRANCH="${K_HW}-$(ver_cut 1-2).y"
-EGIT_CHECKOUT_DIR="${WORKDIR}/linux-${PV}-${K_HW}"
+MY_PR="${PR/r0/}"
+EGIT_CHECKOUT_DIR="${WORKDIR}/linux-${PV}-${K_HW}${MY_PR:+-${PR}}"
 
-DESCRIPTION="Hardkernel Odroid kernel sources"
+DESCRIPTION="Hardkernel Odroid XU4 kernel sources"
 HOMEPAGE="https://github.com/hardkernel/linux"
 
 if [[ ${PV} != *"9999" ]] ; then
-	EGIT_COMMIT="${PV//_p/-}"
+	EGIT_COMMIT="${PV}${MY_PR:+-${PR/r/}}"
 	KEYWORDS="~arm"
 fi
 
